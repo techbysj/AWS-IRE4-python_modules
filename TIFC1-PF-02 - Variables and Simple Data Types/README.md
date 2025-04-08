@@ -137,8 +137,8 @@ Strings are useful when you have numbers that should not be treated mathematical
 
 ## Changing the Case in a String
 
-.title() - Capitalises first characters of words
-.upper() - uppercase all characters
+.title() - Capitalises first characters of words  
+.upper() - uppercase all characters  
 .lower() - lowercases all characters
 
 An example of this can be shown in the code introduced at the start of this lesson: 
@@ -208,7 +208,7 @@ Addition formatting can be applied to your strings using escape characters:
   ```
 When Python encounters the backslash in your string it recognises the next character is an instruction, not part of the string. 
 
-See some additional escape characters here: https://www.w3schools.com/python/gloss_python_escape_characters.asp
+See some additional escape characters here: [Windows Server 2022 download](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
 
 ## Stripping Whitespace
 
@@ -273,9 +273,9 @@ print("My cat, " + name.title() + ", is a very picky eater.")
 print("Today, all I have for dinner is tuna with seaweed.")
 ```
 
-## Now That You Know It All... Try Modifying the Following Code to Make it Your Own! When you are done, post your code into your chat channel!
+### Practice
 
-STOP AND CODE: Feel free to make this piece of code your own - whether you want to keep it simple or improve on it! Remember this is just practice, and is supposed to be fun! Good luck.  
+Create your own version of the below code, try to implement more than one variable, and correctly utilise `.title()`, `.upper()`, and `.lower()` within your print statements. Include some comments explaining the purpose of your code.
 
 ```py
 #This code shows how to use variables and strings
@@ -354,19 +354,25 @@ A type error means Python can’t recognize or utilise the type of data you’re
   print(message)
 
   ```
-str() will tell Python to represent non-string values as strings. 
-  - Without str()
+
+`str()` will tell Python to represent non-string values as strings.
+
+  - Without `str()`:
+  
   ```py
   #This will give an error
   tuna_cans = 1_000_000
   print("If noche could eat " + tuna_cans + "cans of tuna he would not hesitate.")
   ```
-  - With str()
+
+  - With `str()`:
+  
   ```py
   #This will not give an error
   tuna_cans = 1_000_000
   print("If noche could eat " + str(tuna_cans) + " cans of tuna he would not hesitate.")
-
   ```
 
-## Let’s do some exercises to practice what we’ve learned! Complete exercise 1: Variables, Strings, and Data Types
+## Complete exercise 1: Variables, Strings, and Data Types
+
+[Variables Exercises](exercises/variables-exercise.md)
