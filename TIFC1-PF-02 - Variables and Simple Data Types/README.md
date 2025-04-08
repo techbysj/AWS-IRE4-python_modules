@@ -49,22 +49,20 @@ print(cat)
 
 Take a look at the code above. Here we have a very simple example of how to use a variable. 
 
-Recall, that a variable is a container that can hold a value that we can use later on in our program. In this example, 'cat' is our variable and the value it holds is 'Noche'. On the final line of code, we use the print() statement with our variable wrapped inside. We are telling python that we want to print the value of our variable. 
+Recall, that a variable is a container that can hold a value that we can use later on in our program. In this example, `cat` is our variable and the value it holds is `Noche`. On the final line of code, we use the `print()` statement with our variable wrapped inside. We are telling python that we want to print the value of our variable. 
 
-STOP AND RUN: Try running this code to see how it works! Change the value and name of the variable to see what happens! 
-
-Now, let's refer back to our code from the start of this presentation: 
+Now, let's tweak the code from the start. 
 
 ```py
-name = "noche"
+name = "Frankie"
 
-print("My cat, " + name.title() + ", is a very picky eater.")
-print("Today, all I have for dinner is tuna with seaweed.")
+print("My dog, " + name.title() + ", is a very picky eater.")
+print("Today, all I have for dinner is supermarket chicken.")
 ```
 
 Can you identify the variable and value in this piece of code?
 
-The first variable is 'name' on the first line, and its value is 'noche'. The variable in this piece of code is being used in a print() statement, except now it is being used in something called a string. We will take a look at strings in a moment. First, we need to look at the rules when using variables...
+The variable is still `name`, but it's value is now `Frankie`. The variable in this piece of code is being used in a `print()` statement, except here it is embedded within another line of text, called a string. We will return to strings shortly, first we need to be aware of some rules when using variables...
 
 ## Naming Rules for Variables and Errors
 
@@ -137,9 +135,11 @@ Strings are useful when you have numbers that should not be treated mathematical
 
 ## Changing the Case in a String
 
-.title() - Capitalises first characters of words  
-.upper() - uppercase all characters  
-.lower() - lowercases all characters
+The following are examples of `methods`, which let you apply additional processing to your data. These particular methods are relevant to working with strings (text), but we will come across other methods useful for different data types, and eventually you will make your own methods.
+
+- .title() - Capitalises first characters of words  
+- .upper() - make all characters uppercase  
+- .lower() - make all characters lowercase
 
 An example of this can be shown in the code introduced at the start of this lesson: 
 
@@ -149,30 +149,28 @@ name = "noche"
 print("My cat, " + name.title() + ", is a very picky eater.")
 print("Today, all I have for dinner is tuna with seaweed.")
 ```
-STOP AND CODE: Try taking away the .title() in the code above to see what happens! Then, replace it with upper() and lower() to see how "noche" changes in case!
 
-There are many different methods that can be used to modify your strings, review some of them here: https://www.w3schools.com/python/python_ref_string.asp
+Some more methods that can be used to modify your strings can be reviewed at [w3schools here](https://www.w3schools.com/python/python_ref_string.asp).
 
 ## Concatenating Strings
 
-Python uses the plus symbol (+) to combine strings. This concept is used in our code from the start of this lesson, but here is another example: 
+Concatenate means to combine, and combining strings (and other data types) is a very common task. Python uses the plus symbol `+` to combine strings, which you can see used in our code from the start of this lesson, but here is another example: 
 
 ```py
-
 cat = "noche"
 
 print("I have a cat named " + cat.title() + " he loves to sleep and have his belly rubbed." )
-
 ```
-Another way to concatenate strings is through f-strings! Take a look at the example below: 
+
+Another way to concatenate strings is through `f-strings`. Take a look at the example below: 
 
 ```py
 name = "noche"
 
 print(f"My cat, {name.title()}, is a very picky eater. Today, all I have for dinner is tuna with seaweed.")
-
 ```
-Notice the syntax here, we begin our string with an 'f' which signals the beginning of our f-string in Python. To use variables within our string, instead of adding a plus wign we wrap our variable in curly brackets {}. No need for any plus signs! Another fun fact about f-strings, is it automatically turns numbers into strings. An example: 
+
+Notice the syntax here, we begin our string with an `f` for format, which signals the beginning of our f-string in Python. To use variables within our string, instead of adding a plus sign we wrap our variable in curly brackets (braces) `{ }`. No need for any plus signs! Another fun fact about f-strings, is it automatically turns numbers into strings. An example: 
 
 ```py
 age = 2
@@ -375,4 +373,4 @@ A type error means Python can’t recognize or utilise the type of data you’re
 
 ## Complete exercise 1: Variables, Strings, and Data Types
 
-[Variables Exercises](exercises/variables-exercise.md)
+[Variables Exercises](exercises/TIFC1-PF-02-exercises.md)
