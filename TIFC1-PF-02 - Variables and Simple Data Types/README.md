@@ -214,36 +214,23 @@ In programming, whitespace refers to any nonprinting character, such as spaces, 
 
 It’s important to think about whitespace. Many typists have a habit of automatically pressing space after each word. Often you’ll want to compare two strings to determine whether they are the same, for example:
 - Checking people’s usernames when they log in to a website.
-- Confirming a choice against available options
+- Confirming a choice against available options. 
 
-Python can look for extra whitespace on the right and left sides of a string. 
-- Remove whitespace from the left or right end of a string using the lstrip() or rstrip() methods.
+Python can look for extra whitespace on the right, left, or sides of a string using the following methods.
 
-STOP AND RUN: Try this example to see rstrip():
 ```py
 cats = "    weasley  "
 
 print(f"I played with {cats.title().rstrip()} all night long and he is still not tired!")
-```
-
-STOP AND RUN: Try this example to see lstrip():
-```py
-cats = "    weasley  "
 
 print(f"I played with {cats.title().lstrip()} all night long and he is still not tired!")
-```
- 
-- Strip whitespace from both sides at once using strip()
-STOP AND RUN: Try this example to see strip():
-```py
-cats = "    weasley  "
 
 print(f"I played with {cats.title().strip()} all night long and he is still not tired!")
 ```
 
 ## Adding Comments
 
-Using # to add comments to help you write notes in your program. Whatever you write past '#' will not effect the rest of your code, it is omly for you to use. Here is an example:
+Using `#` to add comments to help you write notes in your program. As Python works through your lines of code, when it finds a `#` it ignores the rest of the line:
 
 ```py
 #This code shows how to use variables and strings
@@ -251,7 +238,6 @@ name = "noche"
 
 print("My cat, " + name.title() + ", is a very picky eater.")
 print("Today, all I have for dinner is tuna with seaweed.")
-
 ```
 
 You can also write multi-line comment by using docstrings. These are characterized by used three single quotes. Just like the single line comments mentioned above, anything written within the docstring will also not effect your code, it is purely for documentation purposes. Here is an example: 
@@ -286,7 +272,7 @@ print("Today, all I have for dinner is tuna with seaweed.")
 
 ## Numbers
 
-You can add (+), subtract (-), multiply (*), and divide (/) integers in Python. You can either do this in a python file or via a terminal session, which would just return the result of the operation. See an example of using each of these math operators below: 
+You can add `+`, subtract `-`, multiply `*`, and divide `/` numerical values in Python. You can either do this in a python file or via a terminal session, which would just return the result of the operation. See an example of using each of these math operators below: 
 
 - add (+)
   ```py
