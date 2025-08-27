@@ -12,7 +12,7 @@
 ---
 
 ## Back to Dinner… Weasley and Noche Problem
-IMAGES HERE
+<img src="imgs/weasleyandnoche.jpg" width="300" />
 
 ## What Would Happen if I Ran This?
 
