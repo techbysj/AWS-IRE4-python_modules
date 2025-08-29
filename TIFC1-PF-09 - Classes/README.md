@@ -21,11 +21,11 @@ In object-oriented programming (OOP) we create and work with objects, which are 
 
 - If I want to create a game which has lots of enemies, I need *something* to represent each one, allowing each individual enemy to have it's own characteristics like a health bar, different weapons, etc.
 
-- If I make an app for a coffee shop, each individual coffee, with it's specific options, needs to be tracked from ordering to completion.
+- If I make an app for a coffee shop, each type of coffee I offer, with it's specific options, needs to be tracked from ordering to completion.
 
-These are all examples where object-oriented programming can be useful. Each pet is an object; Each enemy in the game can be an object; Each coffee can be an object; And so on. This approach allows us to write code which works with our objects.
+These are all examples where object-oriented programming can be useful. Each pet is an object; Each enemy in the game can be an object; Each coffee type can be an object; And so on... This approach allows us to write code which works with these objects.
 
-So, if a customer selects Caramel Syrup in their coffee, we can write a line of code which adds that option to the specific object that requires it, but not every object - OOP allows individual objects to be handled differently, such as to be personalised.
+So, if a customer selects Caramel Syrup in their coffee, we can write a line of code which adds that option to the specific object that requires it, but not every object - OOP allows individual objects to be handled differently, such as personalising them.
 
 ### Back to Classes
 
