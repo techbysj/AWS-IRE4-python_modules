@@ -33,7 +33,7 @@ weasley = {'fur': 'white and ginger', 'eyes': 'yellow', 'toes': 'pink'}
 
 A variable called `weasley` is declared, and assigned the value of the dictionary.
 
-It is common to use a new line for each item to give improved readability because the keys all line up - but watch your indentation!
+It is common to use a new line for each item to give improved readability because the keys all line up - *but watch your indentation*!
 
 ```py
 weasley = { 
@@ -46,8 +46,9 @@ weasley = {
 
 ### Calling Values from a Dictionary
 
-You can see in the below example the syntax to retrieve values from the dictionary by specifying the key.
+You can see in the below example the syntax to retrieve items from the dictionary by specifying the key, and it's value is returned.
 
+We can also call the values from a dictionary within f-strings.
 
 ```py
 weasley = { 
@@ -62,8 +63,6 @@ print(weasley['toes'])
 
 print(f"Weasley! What have you been rolling in? Your {weasley['fur']} fur is covered in something nasty, eugh!")
 ```
-
-We can also call the values from a dictionary within f-strings.
 
 ### Adding New Key-Value Pairs and Modifying a Dictionary
 
@@ -258,9 +257,9 @@ for food in bigglesworth['favourite foods']:
     print(f"Bigglesworth just loves eating {food}")
 ```
 
-### A Dictionary in a Dictionary
+### A Dictionary of Dictionaries
 
-You can also have a dictionary within a dictionary, a dictionary of dictionaries, but things can get complicated, so be careful!
+You can also have a nested dictionaries i.e. a dictionary of dictionaries, but things can get complicated, so be careful!
 
 ```py
 cats = {

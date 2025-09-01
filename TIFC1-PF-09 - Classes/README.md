@@ -18,22 +18,20 @@ Python is an example of an object-oriented programming language.
 In object-oriented programming (OOP) we create and work with objects, which are unique instances of *something*!
 
 - If I want to create an app for managing my pet's worm and flea treatments, I need *something* in the app which represents and stores info for each pet. 
-
 - If I want to create a game which has lots of enemies, I need *something* to represent each one, allowing each individual enemy to have it's own characteristics like a health bar, different weapons, etc.
-
 - If I make an app for a coffee shop, each type of coffee I offer, with it's specific options, needs to be tracked from ordering to completion.
 
-These are all examples where object-oriented programming can be useful. Each pet is an object; Each enemy in the game can be an object; Each coffee type can be an object; And so on... This approach allows us to write code which works with these objects.
+These are all examples where object-oriented programming can be useful. Each pet is an object; Each enemy in the game can be an object; Each coffee type can be an object; And so on... This approach allows us to write code which works with these objects individually.
 
-So, if a customer selects Caramel Syrup in their coffee, we can write a line of code which adds that option to the specific object that requires it, but not every object - OOP allows individual objects to be handled differently, such as personalising them.
+So, if a customer selects Caramel Syrup in their coffee, we can write a line of code which adds that option to the specific object that requires it, but not every object - OOP allows individual objects to be handled differently, such as for personalising them.
 
 ### Back to Classes
 
-Classes are how we make objects, they're like object constructors, or a blueprint for creating new objects.
+Classes are how we make objects, they construct objects, like a template or a blueprint for creating new objects.
 
 ## Creating and Using a Class
 
-You can model almost anything using a class. To start, you use the keyword ‘class’. You just need to think about what you are modelling.
+You can model almost anything using a class, simply use the keyword ‘class’. You just need to think about what you are modelling...
 
 #### Bring in the CATS
 
@@ -64,7 +62,7 @@ What can we see here?
 
 ## Methods
 
-A function that is within a class is called a method and is available to objects created by the class. This is the exact same thing as the functions we created in Module 8, just named something different within classes.
+A function that is within a class is called a method and is available to the objects created by the class. This is the exact same thing as the functions we created in Module 8, just named something different within classes.
 
 In the example we've created three methods `def __init__(self, name, age)`, `def sleep(self)` and `def climbing(self)`, but the first one is likely the most unfamiliar.
 
@@ -79,15 +77,15 @@ class Cat():
         self.age = age
 ```
 
-All classes require a function called `__init__()`, which is always executed when the class is being 'initiated'. The `__init__()` method is used to assign values to the individual objects created by the class. In our example we are modelling a class, each object will be a new cat. But each cat needs it's own name, it's own age, it's own fur colour, so the `__init__()` method passes these attributes to the unique object. 
+All classes require a function called `__init__()`, which is always executed when an object is being 'initiated'. The `__init__()` method is used to assign values to the individual objects created by the class. In our example we are modelling a `cat` class, each object will be a new cat. But each cat needs it's own name, it's own age, it's own fur colour, so the `__init__()` method passes these unique attributes to the specific object.
 
 Other operations that are necessary when the object is being created, for example, creating a confirmation message for each created object, can also be carried out in the `__init__()` method.
 
 ### The `self` Parameter
 
-The self parameter is a reference to the instance itself; This is a litle confusing, but the point of classes is to make objects - and each object needs to be unique. Imagine you're making a game, and your class creates enemies. Each enemy might start the same, but they each need their own health bar, perhaps you want them to be different colours. So `self` gives each individual instance access to it's own set of attributes, and allows each instance to access the methods from within the class individually. So, if you give your enemies a method allowing them to dodge out of your way, they won't all have to dodge at the same time.
+The self parameter is a reference back to the instance itself; This is a litle confusing, but the point of classes is to make objects - and each object needs to be unique. Imagine you're making a game, and your class creates enemies; Each enemy might start the same, but they each need their own health bar, perhaps you want them to be different colours. So `self` gives each individual instance access to it's own set of attributes, and allows each instance to access the methods from within the class individually. So, if you give your enemies a method allowing them to dodge out of the way, only one object needs to access the `dodge` method, all objects won't have to dodge at the same time.
 
-Looking at our example again
+Looking at our example again...
 
 ```py
 class Cat():
@@ -100,9 +98,9 @@ class Cat():
 
 You can see that each cat created by our class can have it's own name and age, we can add more attributes if we wish, weight, colour, etc... By adding attributes as key-value pairs in this manner, we can model almost anything as a class.
 
-One more point about `self`, if you think back to the Functions module, you may remember that if a function requires parameters, we pass arguments through to them when we call the function. However, when we create an instance of a class, we **don't** need to provide an argument for `Self`.
+One more point about `self`, if you think back to the Functions module, you may remember that if a function requires parameters, we pass arguments through to them when we call the function. However, when we create an instance of a class, we **don't** provide an argument for `Self`.
 
-In our example, to call our class and create a cat, we just need to provide the name and age of the cat(s) we want to create. But one last thing first, we also gave them the ability to sleep and climb.
+In our example, to call our class and create a cat, we just need to provide the name and age of the cat(s) we want to create... But we also gave them the ability to sleep and climb.
 
 *NOTE: Three dots `...` indicate omitted code.*
 ```py
@@ -144,7 +142,7 @@ my_cat = Cat('Weasley', 1)
 
 Ok, so where is Weasley?
 
-He has been assigned to the `my_cat` variable. 
+He has been created and returned by the class, and assigned to the `my_cat` variable. 
 
 ## Calling Methods
 

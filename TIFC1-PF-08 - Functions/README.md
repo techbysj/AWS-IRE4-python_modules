@@ -8,15 +8,16 @@
 
 #### What are Functions?
 
-Functions are blocks of code designed to do a specific job. 
+Functions are blocks of code designed to do a specific job.
+Rather than your code being interpreted line by line like your main body of code, to use the function you have defined you need to **call** it. 
 
-#### How do I Use Functions?
-
-If you want to use the function you have defined, you need to call on the function. You can create functions within your code, or you can also store your functions in different files (modules) and call on them from the main codebase. 
+You can create functions inline with your code, or you can also store your functions in different files (modules) and call on them from the main codebase. 
 
 #### Why are functions useful?
 
-It means that instead of writing out block of the same or similar code several times resulting in lots of duplication, you can write one function and call it as necessary instead. This can help you avoid creating long files which are difficult to work with.
+It means that instead of writing out blocks of repetitive or similar code over and over again, resulting in messy and long 'spaghetti code', which is difficult to work with. 
+
+Instead you can write one `function`, and call it as many times as necessary.
 
 ## A Very Simple Function
 
@@ -27,11 +28,13 @@ def greet_sausage():
 greet_sausage()
 ```
 
-This is a very simple function, but you can see the important syntax. we define `def` our new function and give it a name, `greet_sausage` in our case. We also have a pair of brackets we'll use shortly, but this function works without anything else. Then to call our function we simply use the name we gave it. 
+This is a very simple function, but you can see the important syntax. we define `def` our new function and give it a name, `greet_sausage` in our case. We also have a pair of empty brackets we'll populate shortly, but this function works without anything else. 
+
+Then to call our function we simply use the name we gave it. 
 
 ### Making it More Useful
 
-To make our functions more useful, we have to provide more information. Here's the same function with a few changes for us to explore.
+To make our functions more useful, we have to provide ssoem input for it to process. Here's the same function with a few changes for us to explore.
 
 ```py
 def greet_sausage(dog):
@@ -43,13 +46,19 @@ greet_sausage('Frankie')
 
 ### Arguments and Parameters
 
-So far, when we've written code, we've given that code data to work on, usually by assigning the data to a variable, then *passing* the variable through the code. When we run our code Python executes it from top to bottom, following our loops and branches.
+So far when we've written code, we've given that code data to work on. Usually by assigning the data to a variable, then the variable is processed through the code. 
 
-But the code in a functione only runs when the function is called.
+When we run our code Python executes it from top to bottom, following our loops and branches. But the code in a functione only runs when the function is called.
+
+#### Parameters
 
 A **Parameter** is a value we can pass through to our function when we call it, and the function can use these values to provide more *functionality*.
 
-We specify the required parameter(s), in this case `dog`, in the brackets when we declare the function, when calling a function we need to provide a value for the parameter(s). 
+We specify the required parameter(s), in this case `dog`, in the brackets when we declare the function, when calling a function we need to provide a value for the parameter(s).
+
+    If a parameter is required by a function, and a matching argument is not provided, your code will error. 
+
+#### Arguments
 
 The value that we pass through is called an **Argument**. This may seem a bit confusing, but it's because we can call the function over and over again, passing through different *arguments* to the same *parameter*.
 
@@ -71,7 +80,7 @@ This illustrates how the parameter allowed us to make the function more useful. 
 
 ## More Complex Functions
 
-We can create more useful functions by providing more parameters and arguments, in addition to writing more advanced code to process this data.
+We can create more useful functions by providing more parameters and arguments, in addition to writing more advanced code to process these inputs.
 
 ### Positional Arguments
 
@@ -86,7 +95,7 @@ describe_pet('dachshund', 'scout')
 describe_pet('scout', 'dachshund')
 ```
 
-Order matters! When you call a function and provide the necessary arguments, they populate the parameters in the order you provide them, i.e. argument 1 = parameter 1, argument 2 = parameter 2, and so on.
+Order matters - By default, when you call a function and provide the necessary arguments, they populate the parameters in the order you provide them, i.e. argument 1 = parameter 1, argument 2 = parameter 2, and so on.
 
 ### Keyword Arguments
 
@@ -255,6 +264,8 @@ In our examples we've just created one function at a time and called that functi
 
 One way to avoid this is by storing your functions in a separate file called a module, and then importing that module into your main program. There's nothing different about the module, it's just a .py file, full of your named functions.
 
+### Importing an Entire Module
+
 An import statement tells Python to make the functions in a module available to the currently running program file.
 
 ```py
@@ -263,7 +274,7 @@ import my_module
 my_function('argument1', 'argument2')
 ```
 
-This example calls a function called `my_function` from a module called `my_module` which was imported at the beginning of the file. `my_function`, saved in `my_module` could be very long and complex, but this bit of code looks very simple and is easy to work with.
+This example calls a function called `my_function` from a module called `my_module` which was imported at the beginning of the file. `my_function`, saved in `my_module` could be very long and complex, but this specific bit of code is simple and to work with and follow.
 
 ### Importing Specific Functions
 
