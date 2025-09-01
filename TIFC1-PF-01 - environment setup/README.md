@@ -6,7 +6,9 @@ Specifically, we're going to use:
 
 - Git - version control software, used for managing and tracking changes and contributors to code bases, and projects.
 - GitHub - provides online repositories (*like file shares*), which allow you to create, store, change, merge, and collaborate on files or code. **Although commonly used together, Git and GitHub are separate tools, for example Git can be used with other repository providers or private repo's**.
-- Visual Studio Code (VSCode/VSC) - Out of the box it's just a text editor, with a few cool features such as an integrated terminal, developed by Microsoft. But through a huge range of extensions and plugins, it's functionality can be massively expanded. It is available on Windows, Mac, Linux, through a browser, and more. It supports pretty much every language you can think of through plugins, as well as integrates with many industry standard tools and technologies. It's flexibility has resulted in VSC becoming the most popular coding environment in industry. Other options exist, some are specialised for a single language, such as pyCharm, and if you have a strong preference for an alternative then it's not a huge problem. But you may find yourself swapping between a few different windows to match VSC's functionality.
+- Visual Studio Code (VSCode/VSC) - Out of the box it's just a text editor, with a few cool features such as an integrated terminal, developed by Microsoft. But through a huge range of extensions and plugins, it's functionality can be massively expanded. It is available on Windows, Mac, Linux, through a browser, and more. It supports pretty much every language you can think of through plugins, as well as integrates with many industry standard tools and technologies. 
+
+    Its' flexibility has resulted in VSC becoming the most popular coding environment in industry. Other options exist, some are specialised for a single language, such as pyCharm, and if you have a strong preference for an alternative then it's not a huge problem. But you may find yourself swapping between a few different windows to match VSC's functionality.
 
 ## Installation
 
