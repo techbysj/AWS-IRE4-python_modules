@@ -1,5 +1,4 @@
-## Working with Lists
----
+# Working with Lists
 
 #### Learning Objectives:
 - In this session we will:
@@ -12,8 +11,7 @@
 
 #### Take a Look!
 
-What do+
--you think will happen if this code were to run?
+What do you think will happen if this code were to run?
 
 ```py
 foods = ["tuna", "salmon", "mackerel", "trout"]
@@ -90,10 +88,8 @@ The for loop works exactly the same as the previous examples! We start with a li
 STOP AND CODE: Try modifying one of the previous examples to make your own code using a for loop. The best way to learn Python is to practice and make mistakes! 
 TOP TIP: Always remember to add your colon ( : )!
 
-
-### Let's Take a Math Break!
 ---
-#### Making Numerical Lists
+### Making Numerical Lists
 
 Cats and dogs aside, sometimes you might need to make lists using numbers. To make a list using numbers, you do exactly what you have seen with our list of cat food and dogs:
 

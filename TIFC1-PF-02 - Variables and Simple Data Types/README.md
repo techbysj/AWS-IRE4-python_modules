@@ -206,7 +206,7 @@ Addition formatting can be applied to your strings using escape characters:
   ```
 When Python encounters the backslash in your string it recognises the next character is an instruction, not part of the string. 
 
-See some additional escape characters here: [Windows Server 2022 download](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
+See some additional escape characters here: [w3schools](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
 
 ## Stripping Whitespace
 
@@ -359,4 +359,4 @@ A type error means Python can’t recognize or utilise the type of data you’re
 
 ## Complete exercise 1: Variables, Strings, and Data Types
 
-[Variables Exercises](exercises/TIFC1-PF-02-exercises.md)
+[Variables Exercises](TIFC1-PF-02-exercises.md)
